@@ -3,19 +3,19 @@ import { EXPERIENCES } from '../constants'
 
 export default function WorkExperiece() {
   return (
-    <div className='border-b border-neutral-900 pb4'>
-      <h1 className='my-20 text-center text-4xl'>Work Experience</h1>
+    <div className='border-b border-white pb4'>
+      <h1 className='my-20 text-center text-4xl text-white'>Work Experience</h1>
       <div>
         {EXPERIENCES.map((exp, index)=>(
             <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
                 <div className='w-full lg:w-1/4'>
-                    <p className='mb-2 text-sm'>{exp.year}</p>
+                    <p className='mb-2 text-sm text-white'>{exp.year}</p>
                 </div>
                 <div className='w-full max-w-xl lg:w-3/4'>
-                    <h6 className='mb-2 font-semibold'>
+                    <h6 className='mb-2 font-semibold text-white'>
                         {exp.role} - <span className='text-sm text-purple-400'>{exp.company}</span>
                     </h6>
-                    <p className='mb-4 text-neutral-900'>
+                    <p className='mb-4 text-neutral-300'>
                         {exp.description}
                     </p>
                     {exp.technologies.map((tech, index)=>(
