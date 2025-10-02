@@ -19,7 +19,7 @@ export default function WorkExperiece() {
                         {exp.description}
                     </p>
                     {exp.technologies.map((tech, index)=>(
-                        <span key={index} className='mr-2 mt-4 rounded bg-purple-400 px-2 py-1 text-sm font-medium text-white'>
+                        <span key={index} className='mr-2 mb-2 inline-block rounded bg-purple-400 px-2 py-1 text-sm font-medium leading-normal text-white'>
                             {tech}
                         </span>
                     ))}
